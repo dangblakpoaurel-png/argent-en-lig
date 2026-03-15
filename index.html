@@ -710,15 +710,15 @@ footer {
     </div>
     <div class="hero-stats">
       <div class="stat-item">
-        <div class="stat-num" data-count="472">0</div>
+        <div class="stat-num">472</div>
         <div class="stat-label">Pages</div>
       </div>
       <div class="stat-item">
-        <div class="stat-num" data-count="7">0</div>
+        <div class="stat-num">7</div>
         <div class="stat-label">Piliers</div>
       </div>
       <div class="stat-item">
-        <div class="stat-num" data-count="500">0</div>
+        <div class="stat-num">500+</div>
         <div class="stat-label">Lecteurs</div>
       </div>
     </div>
@@ -1033,6 +1033,9 @@ footer {
 
 
 <!-- FOOTER -->
+
+
+
 <footer>
   <div class="footer-inner">
     <div class="footer-logo">Xinapess</div>
@@ -1044,7 +1047,7 @@ footer {
     </div>
   </div>
   <div class="footer-copy">
-  <p style="margin-bottom:10px;">Pour toute question ou problème, contacte-nous à : <span style="color:var(--gold); font-weight:600;">xinapess@gmail.com</span></p><script>
+  <p style="margin-bottom:10px;">Pour toute question ou problème, contacte-nous à : <span style="color:var(--gold); font-weight:600;"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8df5e4e3ecfde8fefecdeae0ece4e1a3eee2e0">[email&#160;protected]</a></span></p><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // Nav scroll
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
@@ -1070,14 +1073,4 @@ footer {
         const timer = setInterval(() => {
           current = Math.min(current + step, target);
           e.target.textContent = current + suffix;
-          if (current >= target) clearInterval(timer);
-        }, 20);
-        counterObserver.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.5 });
-  counters.forEach(c => counterObserver.observe(c));
-
-  // FAQ
-  function toggleFaq(btn) {
-    const it
+          if (current >= target)
